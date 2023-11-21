@@ -1,0 +1,53 @@
+.card-box {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 300px;
+    box-shadow: 1px 5px 10px #d1d1d1;
+    height: 200px;
+    margin: 5px auto;
+    border-radius: 15px; 
+    text-align: center;/* Center the card horizontally with top and bottom margin */
+}
+
+.upper-section {
+    margin-top: 50px;
+    /* background-image: url('https://images.pexels.com/photos/159020/sunset-sky-afterglow-evening-sky-159020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    box-shadow: 1px 5px 20px #d3d3d3;
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    border-radius: 15px; /* Center content horizontally */
+}
+
+.temperatureone {
+    margin-top: 30px;
+    height: 200px;
+   
+}
+
+.inputfield {
+    margin-top: 20px;
+ 
+    
+}
+
+.btn {
+    
+    margin-left: 5px;
+    
+}
+.form{
+    justify-content: center;
+    text-align: center;
+}
+

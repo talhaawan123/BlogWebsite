@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+
+
+<div *ngIf="post">
+    
+    <h2 style="text-align: center;">{{ post.title }}</h2> <br><br>
+    <div *ngIf="post.featuredimageurl" class="featured-image-container">
+        <img [src]="post.featuredimageurl" alt="Featured Image">
+      </div>
+    <p>Author: {{ post.author }}</p> <br><br>
+    <p>Publish Date: {{ post.publishDate | date }}</p>
+    <!-- Add more properties as needed -->
+  
+    <div> <br>
+      <h3>Content:</h3>
+      <p>{{ post.content }}</p>
+    </div>
+  
+    <button class="btn btn-warning" (click)="deletePost()">Delete</button>
+    <!-- Add more sections as needed based on your Blog model -->
+  
+  </div>
+  
+  <div *ngIf="!post">
+    <p>Loading...</p>
+  </div>
+</div>
+  
+  
+
+  
+  
+  
+  

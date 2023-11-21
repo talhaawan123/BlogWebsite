@@ -1,0 +1,17 @@
+<app-main-navbar></app-main-navbar>
+<div style="margin-top: 50px;" class="container login-container text-center">
+  <h2>Login as an Admin</h2>
+  <div class="row">
+    <div class="col-md-4 offset-md-4 login-form bg-dark text-light p-4 rounded">
+      <h2>Admin Login</h2>
+      <form>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" name="password">
+        </div> <br><br>
+        <button type="button" class="btn btn-login btn-block btn-warning" (click)="checkPassword()">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

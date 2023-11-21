@@ -1,0 +1,17 @@
+<!-- user-view-blogs.component.html -->
+<app-main-navbar></app-main-navbar>
+<div class="container mt-4">
+    <div class="row">
+      <div *ngFor="let post of posts" class="col-md-4 mb-4">
+        <div class="card">
+          <img src="assets/profile.jpg"  class="card-img-top" alt="{{ post.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.summary }}</p>
+            <a [routerLink]="['/user/posts/', post.id]" class="btn btn-primary">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

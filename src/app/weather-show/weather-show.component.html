@@ -1,0 +1,28 @@
+<app-main-navbar></app-main-navbar>
+
+<div class="container">
+    <form #form="ngForm" (submit)="onSubmit()">
+        <input class="inputfield" type="text" placeholder="enter city" name="city" [(ngModel)]="city">
+        <button class="button" type="submit">submit</button>
+    </form>
+
+    <div class="container-fluid upper-section" [ngStyle]="{'background-image': isTemperatureAbove90() ? 'url(https://images.pexels.com/photos/3923603/pexels-photo-3923603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)' : 'url(https://images.pexels.com/photos/19121700/pexels-photo-19121700/free-photo-of-a-man-standing-in-front-of-a-rock-formation-with-a-starry-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
+                                                        'background-size': 'cover',
+                                                        'background-repeat': 'no-repeat',
+                                                        'width': '300px',
+                                                        'height': '200px'}">
+        <div class="container temperatureone">
+            <h2 style="margin-top: 30px;"> {{temperature}} °F</h2>
+        </div>
+    </div>
+
+    <div class="lowersection">
+        <div class="container card-box">
+            <br><br>
+            <p>Temperature: {{temperature}} °F</p>
+            <p>Wind speed: {{wind}}</p>
+            <p>Humidity: {{humidity}}</p>
+            <p>Pressure: {{pressure}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<app-main-navbar></app-main-navbar>
+<div class="container">
+
+
+    <div *ngIf="post">
+        
+        <h2 style="text-align: center;">{{ post.title }}</h2> <br><br>
+        <div style="justify-content: center; text-align: center;" class="featured-image-container">
+            <img style="height: 200px; width:400px; border-radius: 10px;" src="assets/blogprofile.jpg" alt="Featured Image">
+          </div>
+        <p>Author: {{ post.author }}</p> <br><br>
+        <p>Publish Date: {{ post.publishDate | date }}</p>
+        <!-- Add more properties as needed -->
+      
+        <div> <br>
+       <article class="card-text" [innerHTML]="post.content"></article>    
+      
+        </div>
+      
+      </div>

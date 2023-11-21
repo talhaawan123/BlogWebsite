@@ -1,0 +1,28 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .post-container {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .post-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-image-container {
+    margin-top: 10px; /* Add margin to separate title and featured image */
+  }
+  
+  .featured-image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded appearance */
+  }
+  
